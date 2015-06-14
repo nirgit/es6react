@@ -1,4 +1,7 @@
 import React from 'react';
+import CustomFrame from './frame';
+
+'use strict';
 
 class HelloWorld extends React.Component {
 	render() {
@@ -8,6 +11,7 @@ class HelloWorld extends React.Component {
 			<div>
 				<a href='http://www.wix.com'>I am an ES6 created DIVider, go to Wix.com</a>
 			</div>
+			<CustomFrame source="http://www.wix.com"/>
 		</div>
 	}
 }
