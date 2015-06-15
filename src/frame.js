@@ -3,15 +3,23 @@ import React from 'react';
 'use strict';
 
 class CustomFrame extends React.Component {
+	consructor() {
+		this.displayName = 'CustomFrame';
+	}
+		
 	render() {
 		let wrapperStyle = {
 			'border-width': 10,
 			'border-color': 'aliceblue',
-			'border-style': 'solid'
+			'border-style': 'solid',
+			'padding': 5,
+			'position': 'relative',
+			'width': 500,
+			'height': 400
 		}
 
 		let frameStyle = {
-			height: 500,
+			height: '100%',
 			width: '100%'
 		};
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import FrameContainer from './frameContainer';
 import CustomFrame from './frame';
 
 'use strict';
@@ -11,7 +12,9 @@ class HelloWorld extends React.Component {
 			<div>
 				<a href='http://www.wix.com'>I am an ES6 created DIVider, go to Wix.com</a>
 			</div>
-			<CustomFrame source="http://www.wix.com"/>
+			<FrameContainer>
+				<CustomFrame source="http://www.wix.com"/>
+			</FrameContainer>
 		</div>
 	}
 }
